@@ -1,7 +1,7 @@
 # Medical Chatbot App
 
 ## Project Overview
-
+The Medical Chatbot App is an AI-powered conversational assistant designed to provide reliable medical information, symptom guidance, and healthcare support. Built using LangChain, Flask, and LLM-based reasoning, it integrates retrieval-augmented generation (RAG) and domain-specific knowledge bases to deliver accurate, context-aware responses. The system enables users to interact naturally through text, receive preliminary medical insights, and vector-based retrieval. This application demonstrates the power of AI in healthcare, promoting accessibility, efficiency, and safe patient engagement through intelligent automation.
 ---
 ## Project Structure
 The project is organized into a modular structure to separate concerns, making it clean, maintainable, and easy to navigate.
@@ -59,18 +59,20 @@ HF_TOKEN = "your_HF_TOKEN_here"
 OPENAI_API_KEY = "Your API Key here"
 ```
 
-### Run the serve
+### Run the following command
 ```
 python app.py
 
 ```
-
+Then go to your browser and write
+```
+localhost:8080 # then press enter
+```
 ---
 
 ## Example Output
-
-
-## Evaluation Results
+User: What I do for acidity problem?
+Answer: For managing acidity, consider using over-the-counter antacids which can neutralize stomach acid and provide relief. Products containing simethicone, like Gas-X or Mylanta Gas Relief, may also address symptoms related to gas, if that's part of your discomfort. However, if symptoms persist, consult a healthcare professional for further advice and a suitable long-term treatment plan.
 
 ---
 
