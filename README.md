@@ -1,25 +1,34 @@
 # Medical Chatbot App
 
 ## Project Overview
+
 The Medical Chatbot App is an AI-powered conversational assistant designed to provide reliable medical information, symptom guidance, and healthcare support. Built using LangChain, Flask, and LLM-based reasoning, it integrates retrieval-augmented generation (RAG) and domain-specific knowledge bases to deliver accurate, context-aware responses. The system enables users to interact naturally through text, receive preliminary medical insights, and vector-based retrieval. This application demonstrates the power of AI in healthcare, promoting accessibility, efficiency, and safe patient engagement through intelligent automation.
+
 ---
+
 ## Project Structure
 The project is organized into a modular structure to separate concerns, making it clean, maintainable, and easy to navigate.
 ```
 Medical Chatbot App/
 ├── .env                            # All API Key is stored here
 ├── data/
-│   └─
+│   └─Medical_book.pdf
+├── static/
+│   └─style.css
+├── templates/
+│   └─chat.html
 ├── research/
 │   └─ experiment.ipynb             # First I explored the full project here before writing moduler structure code
 ├── src/                            # Start Modular Coding
 │   ├─ __init__.pt.py
 │   ├─ helper.py                                               
-│   └─ prompt.py                               
+│   └─ prompt.py 
+└── app.py                              
 └── LICENSE
 └── README.md                       # Comprehensive project documentation
 └── requirements.txt                # Lists all Python dependencies
 └── setup.py
+└── store_index.py
 └── template.py                     # python script for creating our project folder structure
 ```
 
@@ -55,7 +64,7 @@ pip install -r requirements.txt
 ### 3. Set API Key (Keep your all API in .env file) - best approach
 Create a `.env` file in the project root:
 ```
-HF_TOKEN = "your_HF_TOKEN_here"
+PINECONE_API_KEY = "Your API Key here"
 OPENAI_API_KEY = "Your API Key here"
 ```
 
